@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" class="mode-minimal layout-2">
+<!-- 
+    mode-default (cores e marca d’água),
+    mode-minimal (preto & branco, alto contraste),
+    mode-custom (adicione suas fontes e imagens no CSS).
+
+    layout-2 ou layout-3 conforme o tipo de panfleto 
+    (duas colunas ou grid 3×3).
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Panfleto Completo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="page vertical-layout">
+    <h1>⚡ Regras‑Relâmpago</h1>
+
+    <div class="section">
+      <div>
+        <h2>Testes Básicos</h2>
+        <p>Declare a Ação e o <span class="tag">Atributo</span>. Role <span class="tag">2d6 🎲</span> e siga essas
+          regras:
+        </p>
+        <ul>
+          <li><strong>Duplo 6</strong> no dado: <span class="tag">12</span> é Sucesso crítico.</li>
+          <li><strong>Duplo 1</strong> no dado: <span class="tag">2</span> é Falha crítica.</li>
+          <li>Nos outros casos, some o Resultado ao <span class="tag">Atributo</span> declarado, e compare com a <span
+              class="tag">Dificuldade</span> do desafio.</li>
+          <li>Em testes de combate, o personagem com maior resultado vence; <strong>empate favorece o defensor</strong>.
+          </li>
+        </ul>
+        <h2>Atributos iniciais</h2>
+        <p>
+          <span class="tag">Força 💪</span>
+          <span class="tag">Habilidade 🏃‍♂️</span>
+          <span class="tag">Mira 🎯</span>
+          <span class="tag">Resistência 🛡️</span>
+          <span class="tag">Inteligência 🧠</span>
+          <span class="tag">Carisma 👥</span>
+        </p>
+
+
+        <div style="display: flex; gap: 8mm;">
+          <div style="flex: 1;">
+            <h2>Atributos Secundários</h2>
+            <ul>
+              <li><span class="tag">PV 🩸</span> = <span class="tag">Resistência 🛡️</span> × 5</li>
+              <li><span class="tag">PM ✨</span> = <span class="tag">Inteligência 🧠</span> × 4</li>
+            </ul>
+          </div>
+          <div style="flex: 1;">
+            <h2>Vantagem/Desvantagem</h2>
+            <p>
+              Role <span class="tag">3d6 🎲</span> e descarte o menor ou o maior dado.
+            </p>
+          </div>
+        </div>
+
+        <h2>Exemplos de Testes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nível</th>
+              <th>Atributo</th>
+              <th>Exemplo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>6</td>
+              <td>Resistência 🛡️</td>
+              <td>Resistir a veneno fraco</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Força 💪</td>
+              <td>Empurrar porta pesada</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Habilidade 🏃‍♂️</td>
+              <td>Abrir fechadura complexa</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Inteligência 🧠</td>
+              <td>Desarmar runa explosiva</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div>
+        <h2>Dano por Diferença</h2>
+        <ul>
+          <li>
+            <p>
+              O atacante escolhe um <span class="tag">Atributo</span> ofensivo:
+              <span class="tag">Força 💪</span>
+              <span class="tag">Habilidade 🏃‍♂️</span>
+              <span class="tag">Mira 🎯</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              O defensor escolhe um defensivo:
+              <span class="tag">Força 💪</span>
+              <span class="tag">Habilidade 🏃‍♂️</span>
+              <span class="tag">Resistência 🛡️</span>
+            </p>
+          </li>
+          <li>
+            <p>
+              A diferença entre os Resultados define o <span class="tag">Dano</span>. Em combates corpo a corpo, um bom
+              resultado do defensor pode acabar causando dano ao atacante.
+            </p>
+          </li>
+        </ul>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Diferença</th>
+              <th>Efeito de Dano</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0–2</td>
+              <td>−1 <span class="tag">PV 🩸 ou efeito narrativo.</span></td>
+            </tr>
+            <tr>
+              <td>3–5</td>
+              <td>−2 <span class="tag">PV 🩸 ou empurrão/posicionamento.</span></td>
+            </tr>
+            <tr>
+              <td>6–9</td>
+              <td>− <span class="tag">1d6 🎲</span><span class="tag">PV 🩸</span> ou condição leve</td>
+            </tr>
+            <tr>
+              <td>10+ ou crítico</td>
+              <td>Golpe decisivo: dano máximo e condição séria!</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Escala de Condições</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Dado</th>
+              <th>Condição</th>
+              <th>Exemplo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>Incapacitado</td>
+              <td>Paralisia, não pode agir</td>
+            </tr>
+            <tr>
+              <td>3–4</td>
+              <td>Ferimento Grave</td>
+              <td>−2 <span class="tag">PV 🩸</span> por rodada e Desvantagem</td>
+            </tr>
+            <tr>
+              <td>5–6</td>
+              <td>Sangrando</td>
+              <td>−1 <span class="tag">PV 🩸</span> por rodada</td>
+            </tr>
+            <tr>
+              <td>7–9</td>
+              <td>Atordoado</td>
+              <td>-2 em todos os testes</td>
+            </tr>
+            <tr>
+              <td>10–11</td>
+              <td>Exausto</td>
+              <td>Desvantagem</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Arranhão</td>
+              <td>Sem penalidade</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><small><em>Nota:</em> Todas as condições persistem até serem curadas por uma habilidade ou item.</small></p>
+
+      </div>
+    </div>
+
+
+
+    <h1>🛠️ Criação de Personagens</h1>
+
+    <div class="section">
+      <div>
+        <h2>1 - Distribua seus Atributos</h2>
+        <p>Você tem <strong>25</strong> <span class="tag">Pontos de Personagem</span> para comprar pontos em <span
+            class="tag">Atributos</span>.
+          O custo para aumentar cada ponto de <span class="tag">Atributo</span> é progressivo:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Valor de Atributo</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8+</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Custo em Pontos</th>
+              <td>2</td>
+              <td>3</td>
+              <td>5</td>
+              <td>8</td>
+              <td>13</td>
+              <td>20</td>
+              <td>25</td>
+              <td>30</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Descrição dos Atributos</h3>
+        <ul>
+          <li><span class="tag">Força 💪</span> - Poder físico, carga e dano corpo a corpo.</li>
+          <li><span class="tag">Habilidade 🏃‍♂️</span> - Coordenação manual, velocidade e furtividade.</li>
+          <li><span class="tag">Mira 🎯</span> - Precisão em ataques à distância.</li>
+          <li><span class="tag">Resistência 🛡️</span> - Robustez; PV e resistência a venenos.</li>
+          <li><span class="tag">Inteligência 🧠</span> - Raciocínio, conhecimento e PM.</li>
+          <li><span class="tag">Carisma 👥</span> - Persuasão social e barganhas.</li>
+        </ul>
+
+        <h3>Exemplos de Arquétipos</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Arquétipo</th>
+              <th>FOR 💪</th>
+              <th>HAB 🏃‍♂️</th>
+              <th>MIR 🎯</th>
+              <th>RES 🛡️</th>
+              <th>INT 🧠</th>
+              <th>CAR 👥</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Guerreiro</strong></td>
+              <td>4</td>
+              <td>2</td>
+              <td>1</td>
+              <td>4</td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><strong>Arqueira</strong></td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>2</td>
+              <td>2</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><strong>Mago</strong></td>
+              <td>0</td>
+              <td>1</td>
+              <td>1</td>
+              <td>2</td>
+              <td>5</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><strong>Bardo</strong></td>
+              <td>1</td>
+              <td>3</td>
+              <td>1</td>
+              <td>2</td>
+              <td>4</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div>
+        <h2>2 - Tipos de Equipamentos</h2>
+        <h2>Armas ⚔️</h2>
+        <ul>
+          <li><strong>Leve:</strong> sem requisitos e sem bônus.</li>
+          <li><strong>Pesada:</strong> requer 2 de <span class="tag">Força 💪</span>; +1 de dano.</li>
+          <li><strong>Complexa:</strong> requer 3 de <span class="tag">Habilidade 🏃‍♂️ </span>; +1 em testes
+            ou
+            dano.
+          </li>
+          <li><strong>Rara:</strong> requer 4 de <span class="tag">Força 💪 </span>; +2 em testes ou +1d6 de
+            dano.
+          </li>
+        </ul>
+        <h2>Armaduras 🛡️</h2>
+        <ul>
+          <li><strong>Leve:</strong> sem requisitos e sem bônus.</li>
+          <li><strong>Couro:</strong> reduz 1 de <span class="tag">Movimentação</span>, reduz 1 de dano.</li>
+          <li><strong>Malha:</strong> requer 2 de <span class="tag">Força 💪</span>; reduz 2 de <span
+              class="tag">Movimentação</span>, reduz 2 de dano.</li>
+          <li><strong>Pesada:</strong> requer 4 de <span class="tag">Força 💪</span>; reduz 4 de <span
+              class="tag">Movimentação</span>, reduz 3 de dano.</li>
+        </ul>
+        <p><small><em>Nota:</em> <strong>Movimentação</strong> é uma regra opcional, pode significar casas/hex
+            de um tabuleiro, metros ou então apenas efeitos narrativos.</small></p>
+        <h2>3 - Habilidades, Profissões & Evolução</h2>
+        <ul>
+          <li><strong>Evolução:</strong> Ao fim de cada aventura, receba <span class="tag">Pontos de
+              Personagem</span> para investir em Atributos ou Habilidades.</li>
+          <li><strong>Habilidades:</strong> Compre habilidades dos Panfletos 4 em diante, com regras de
+            <strong>classes, magias e profissões</strong>.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <h1>⚡ Regras Extras</h1>
+
+
+    <div class="section">
+      <div>
+        <h2>⚔️ Turnos de Batalha</h2>
+        <p>A ordem de ação é decidida por um teste de <span class="tag">Habilidade 🏃‍♂️</span>. Cada jogador, no seu
+          turno, pode realizar:</p>
+        <ul>
+          <li><strong>1 Movimento.</strong></li>
+          <li><strong>1 Ação:</strong> ataque, usar item, magia ou teste.</li>
+          <li><strong>1 Ação Bônus:</strong> se alguma habilidade permitir (ex: ataque extra do Monge).</li>
+        </ul>
+
+        <h2>🧭 Movimentação em Batalha</h2>
+        <p>O combate pode usar tabuleiro ou ser narrado:</p>
+        <ul>
+          <li><strong>Em mapas:</strong> cada casa ou hex equivale a 1 movimento.</li>
+          <li><strong>Em narração:</strong> o posicionamento deve ser claro e acordado com o Mestre.</li>
+          <li><strong>Armaduras pesadas:</strong> reduzem o deslocamento (–1 por nível da armadura).</li>
+          <li><strong>Terrenos difíceis:</strong> (pântano, ruínas etc.) também limitam movimentação.</li>
+        </ul>
+
+        <h2>🗡️ Golpe de Oportunidade</h2>
+        <p>Se um inimigo atravessar seu alcance corpo a corpo:</p>
+        <ul>
+          <li>Você pode fazer um ataque com <strong>Vantagem</strong>, usando uma ação bônus como reação imediata.</li>
+          <li>Em cada cena, você pode dar um número de Golpes de Oportunidade igual ao seu nível de <span
+              class="tag">Habilidade 🏃‍♂️</span>.</li>
+          <li>Torna o posicionamento mais estratégico e realista.</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div>
+        <h2>💰 Moedas</h2>
+        <p>
+          Todo personagem começa com <span class="tag">Moedas de Cobre</span>, o suficiente para estadia simples,
+          refeições básicas e ferramentas comuns, como flechas.
+        </p>
+        <p>
+          Durante a aventura, é possível encontrar <span class="tag">Moedas de Ouro</span> — valiosas e raras. Com elas,
+          você pode <strong>comprar itens mágicos, contratar serviços, pagar resgates ou consertar equipamentos de forma
+            especial</strong>.
+        </p>
+
+        <h2>🌀 Novas Habilidades e Personalizações</h2>
+        <p>O sistema incentiva a criatividade e a personalização:</p>
+        <ul>
+          <li>Você pode criar habilidades exclusivas, como a capacidade de <strong>voar</strong>, <strong>se transformar
+              em uma criatura</strong> ou <strong>atravessar paredes</strong>, sempre garantindo a aprovação do Mestre
+            para manter o equilíbrio do jogo.</li>
+          <li>Utilize <span class="tag">Pontos de Personagem</span> para desbloquear novos poderes, garantindo que seus
+            custos e efeitos estejam equilibrados.</li>
+          <li>Nos momentos finais da campanha, priorize cenas épicas e narrativas marcantes, <strong>reduzindo rolagens
+              desnecessárias</strong>.</li>
+          <li>Para combates com muitos inimigos, agrupe-os em "Grupos de Inimigos" com atributos combinados, como mais
+            PV e ataques adicionais, para agilizar o jogo.</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <h1>⚔️ Classes Marciais</h1>
+
+
+    <div class="section">
+      <div>
+        <h2>🪓 Bárbaro</h2>
+        <ul>
+          <li><span class="tag">3 pts</span> <strong>Fúria</strong>: 1×/cena, +2 FOR e –1 Armadura até o fim da cena.
+            <em>Ação bônus.</em>
+          </li>
+          <li><span class="tag">5 pts</span> <strong>Couro de Pedra</strong>: enquanto em Fúria, reduza todo dano em 1
+            PV,
+            se não estiver usando Armadura Pesada. <em>Passivo.</em></li>
+          <li><span class="tag">8 pts</span> <strong>Rugido Aterrorizante</strong>: 1×/cena, inimigos em 6 m sofrem –1
+            em
+            ataques; falha em RES ficam atordoados 1 turno. <em>Ação padrão.</em></li>
+          <li><span class="tag">12 pts</span> <strong>Ira Titânica</strong>: 1×/sessão, +4 FOR por 1 turno; inimigos em
+            3
+            m sofrem 1d6 de dano. <em>Ação padrão.</em></li>
+        </ul>
+
+        <h2>🛡️ Soldado</h2>
+        <ul>
+          <li><span class="tag">3 pts</span> <strong>Ordem de Avanço</strong>: 2x/cena, você ou um aliado ganha +1 em
+            testes por 1 turno. <em>Ação padrão.</em></li>
+          <li><span class="tag">5 pts</span> <strong>Postura de Batalha</strong>: 2x/cena, +2 Armadura até seu próximo
+            turno. <em>Ação padrão.</em></li>
+          <li><span class="tag">8 pts</span> <strong>Tática Precisa</strong>: 3x/cena, após atacar, receba +2 HAB em
+            esquiva até o fim do turno. <em>Ação bônus.</em></li>
+          <li><span class="tag">12 pts</span> <strong>Formação de Elite</strong>: 1×/sessão, aliados em 6 m ganham +1
+            FOR
+            e +1 HAB por 2 turnos. <em>Ação padrão.</em></li>
+        </ul>
+
+        <h2>🏹 Caçador</h2>
+        <ul>
+          <li><span class="tag">3 pts</span> <strong>Trilheiro</strong>: ignore terreno difícil e ganhe Vantagem em
+            testes
+            de rastrear. <em>Passivo.</em></li>
+          <li><span class="tag">6 pts</span> <strong>Tiro Preciso</strong>: +2 MIRA em ataques de arco e alcance
+            dobrado.
+            <em>Passivo.</em>
+          </li>
+          <li><span class="tag">8 pts</span> <strong>Armadilha de Caça</strong>: 2×/cena, crie uma armadilha que prende
+            o
+            alvo e causa 1d6 de dano. O alvo precisa passar em um teste de RES para sair da armadilha e perde o turno.
+            <em>Ação padrão.</em>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div>
+        <h2>🗡️ Ladino</h2>
+        <ul>
+          <li><span class="tag">3 pts</span> <strong>Ataque Furtivo</strong>: +1d6 de dano quando atacar um alvo
+            desavisado. Após um ataque, todos que veêm ou escutam o ataque ficam atentos até o fim da cena. <em>Ação
+              padrão.</em></li>
+          <li><span class="tag">5 pts</span> <strong>Ferramentas de Perito</strong>: Vantagem para furtar, abrir
+            fechaduras e detectar armadilhas, podendo fazê‑lo como <em>Ação bônus</em>. </li>
+          <li><span class="tag">7 pts</span> <strong>Golpe Venenoso</strong>: seu ataque furtivo aplica um veneno que
+            causa –1 PV/rodada até curar 2 PV. <em>Ação padrão.</em></li>
+          <li><span class="tag">12 pts</span> <strong>Mestre Ladrão</strong>: +3 em qualquer teste fora de batalha.
+            <em>Passivo.</em>
+          </li>
+        </ul>
+
+        <h2>🍃 Ninja</h2>
+        <ul>
+          <li><span class="tag">3 pts</span> <strong>Bomba de Fumaça</strong>: 1×/cena; cria uma nuvem de 4 m por 1
+            turno. Inimigos na área têm Desvantagem em ataques e Percepção. Em seguida, mova até 3 m sem provocar
+            reações. <em>Ação padrão.</em></li>
+          <li><span class="tag">6 pts</span> <strong>Passo da Sombra</strong>: gaste 1 PM; como ação bônus, teleporte
+            até 9 m entre sombras. Até o fim do turno, ignore terreno difícil, evite reações e tenha Vantagem no próximo
+            ataque ou teste de Furtividade. <em>Ação bônus.</em></li>
+          <li><span class="tag">9 pts</span> <strong>Caminho Shinobi</strong>: 1×/cena; por 2 turnos, corra sobre água,
+            paredes ou tetos. +2 em Acrobacia/Equilíbrio; o primeiro ataque em cada turno causa +1d6 de dano. <em>Ação
+              padrão.</em></li>
+        </ul>
+
+        <h2>🧘 Monge</h2>
+        <ul>
+          <li><span class="tag">3 pts</span> <strong>Golpe Rápido</strong>: ataque extra como ação bônus se estiver
+            desarmado. <em>Ação bônus.</em></li>
+          <li><span class="tag">6 pts</span> <strong>Fluxo de Ki</strong>: gaste 1 PM para adicionar +1d6 de dano a um
+            ataque desarmado. <em>Ação bônus.</em></li>
+          <li><span class="tag">10 pts</span> <strong>Explosão Interior</strong>: 1×/sessão, gaste 2 PM; +2 FOR/RES e
+            ignore reações por 2 turno. <em>Ação padrão.</em></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <h1>🔮 Classes Místicas</h1>
+
+    <div class="section">
+      <div>
+        <h2>🧙‍♂️ Mago</h2>
+        <ul>
+          <li><span class="tag">3 pts</span> <strong>Foco Arcano</strong>: ganhe +2 PM e Vantagem em testes para
+            resistir
+            a magias. <em>Passivo.</em></li>
+          <li><span class="tag">5 pts</span> <strong>Escola Avançada</strong>: pode aprender magias de nível 2.
+            <em>Passivo.</em>
+          </li>
+          <li><span class="tag">8 pts</span> <strong>Tecer Feitiços</strong>: 1×/cena, lance uma magia de nível 2 sem
+            gastar PM. <em>Ação padrão.</em></li>
+          <li><span class="tag">15 pts</span> <strong>Magia Suprema</strong>: agora você pode adquirir e lançar magias
+            de
+            nível 3. <em>Passivo.</em></li>
+        </ul>
+
+        <h2>🩸 Vampiro</h2>
+        <ul>
+          <li><span class="tag">3 pts</span> <strong>Sede Sangrenta</strong>: 1×/cena, ao causar dano com um ataque
+            corpo-a-corpo ou magia, recupere até 1d6 PM. Limite de PM recuperado dessa maneira de INT por dia. <em>Ação
+              bônus.</em></li>
+          <li><span class="tag">6 pts</span> <strong>Sombras Vampíricas</strong>: pode aprender magias de Trevas de
+            nível
+            2; vantagem em testes de Intimidação. <em>Passivo.</em></li>
+          <li><span class="tag">12 pts</span> <strong>Necromancia</strong>: transforme-se em um lich, ganhando imunidade
+            a
+            venenos, doenças e efeitos de morte, além de +2 PM e +2 RES. No entanto, magias de luz e cura causam o dobro
+            de dano em você. <em>Passivo.</em></li>
+        </ul>
+
+        <h2>🐾 Druida</h2>
+        <ul>
+          <li><span class="tag">4 pts</span><strong>Conversar com Animais</strong>: Fale com animais; 2x/cena peça ajuda
+            em testes ou batalhas (bônus de +1d6). <em>Ação padrão.</em></li>
+          <li><span class="tag">6 pts</span><strong>Forma Animal Avançada</strong>: 1×/cena, transforme-se em um animal
+            grande (+2 FOR, +2 RES) ou pequeno (+2 HAB fora de batalha, Vantagem em Acrobacia e Furtividade). <em>Ação
+              padrão.</em></li>
+          <li><span class="tag">9 pts</span><strong>Gigante Verde</strong>: 1x/sessão, vire um gigante de galhos e
+            raízes
+            (+3 FOR, +3 RES, +2 Armadura), use magias de Terra e Água (nível 1 e 2) sem custo. 3PM/rodada. <em>Ação
+              padrão.</em></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div>
+
+        <h2>⚗️ Alquimista</h2>
+        <ul>
+          <li><span class="tag">4 pts</span> <strong>Poções Rápidas</strong>: 1x/cena, 2PM, cria 2 poções de nível 1
+            (cura
+            ou veneno) por 1 PM cada. <em>Ação padrão.</em></li>
+          <li><span class="tag">7 pts</span> <strong>Bombas Elementais</strong>: 1×/sessão, 3PM, cria três granadas de
+            curto alcance que causa uma explosão de 2d6 de fogo em uma área de 3m. Teste de RES para reduzir o dano.
+            <em>Ação padrão.</em>
+          </li>
+          <li><span class="tag">12 pts</span> <strong>Pedra Filosofal</strong>: 1×/campanha, crie um artefato encantado
+            com efeito único definido por você (sujeito à aprovação do Mestre). <em>Passivo.</em></li>
+        </ul>
+
+        <h2>✝️ Templário</h2>
+        <ul>
+          <li><span class="tag">3 pts</span> <strong>Caminho da Luz</strong>: 1×/cena, envolva até 3 aliados em luzes
+            protetoras; ganham +1 Armadura e +1 RES por 2 turnos e vantagem contra as trevas. <em>Ação padrão.</em></li>
+          <li><span class="tag">6 pts</span> <strong>Manto de Luz</strong>: pode aprender magias de nível 2 do domínio
+            da
+            luz; +3PM. <em>Passivo.</em></li>
+          <li><span class="tag">7 pts</span> <strong>Armadura Abençoada</strong>: use armaduras pesadas sem sofrer
+            redução
+            de deslocamento. <em>Passivo.</em></li>
+          <li><span class="tag">12 pts</span> <strong>Aura Sagrada</strong>: 1×/sessão, emane uma aura de 6 m que
+            concede
+            +2 em ataques/testes de aliados, 1d6 de cura e –1 em ataques de inimigos por 1 turno. <em>Ação padrão.</em>
+          </li>
+        </ul>
+
+        <h2>🤡 Palhaço</h2>
+        <ul>
+          <li><span class="tag">4 pts</span> <strong>Truque do Bufão</strong>: 1×/cena, force rerrolagem de algum teste.
+            <em>Ação padrão.</em>
+          </li>
+          <li><span class="tag">7 pts</span> <strong>Quebra de Realidade</strong>: 1x/sessão, inverta o resultado de um
+            teste, que não seja Crítico. Falha vira Sucesso, e vice-versa. <em>Ação padrão.</em></li>
+          <li><span class="tag">9 pts</span> <strong>Agente do Caos</strong>: 1x/sessão, use Carisma em lugar de outros
+            atributos por 2 turnos, imponha condições leves ao causar dano. <em>Ação padrão.</em></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <h1>💼 Profissões</h1>
+
+    <div class="section">
+      <div>
+        <h2>Investigador 🕵️</h2>
+        <ul>
+          <li><span class="tag">Custo: 4 pts</span></li>
+          <li><span class="tag">Passivo</span>: Vantagem em testes de Percepção e Investigação.</li>
+          <li><span class="tag">Façanha (1×/sessão)</span>: Revele uma pista oculta sem rolagem.</li>
+        </ul>
+
+        <h2>Ferreiro 🛠️</h2>
+        <ul>
+          <li><span class="tag">Custo: 6 pts</span></li>
+          <li><span class="tag">Passivo</span>: Repara armas e armaduras entre combates. Elas ganham bonus de +1
+            de dano ou bonus de ataque. Vantagem em
+            construção de estruturas.</li>
+          <li><span class="tag">Façanha (1×/sessão)</span>: Construa ou repare uma estrutura básica, ou erga uma
+            barricada improvisada que forneça cobertura parcial, em minutos.</li>
+        </ul>
+
+        <h2>Curandeiro 🌿</h2>
+        <ul>
+          <li><span class="tag">Custo: 4 pts</span></li>
+          <li><span class="tag">Passivo</span>: Vantagem em coleta de plantas e preparo de poções; descanso curto
+            recupera +2 PV.</li>
+          <li><span class="tag">Façanha (1×/cena)</span>: Crie um unguento que cura 1d6 PV ou neutraliza veneno
+            OU estabilize um aliado a 0 PV e restaure 1 PV.</li>
+        </ul>
+
+        <h2>Bibliotecário 📚</h2>
+        <ul>
+          <li><span class="tag">Custo: 4 pts</span></li>
+          <li><span class="tag">Passivo</span>: Vantagem em pesquisas e recall de informações escritas.</li>
+          <li><span class="tag">Façanha (1×/sessão)</span>: Lembre‑se de um detalhe crucial de um tomo já lido.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div>
+        <h2>Bardo 🎶</h2>
+        <ul>
+          <li><span class="tag">Custo: 6 pts</span></li>
+          <li><span class="tag">Passivo</span>: +1 em testes de Performance. Pode soltar magias com CAR. Ganha 1
+            caminho de magia nível 1.</li>
+          <li><span class="tag">Façanha (1×/sessão)</span>: Inspire aliados, concedendo +1 em todos os testes por
+            3 rodadas.</li>
+        </ul>
+
+        <h2>Mercador 💰</h2>
+        <ul>
+          <li><span class="tag">Custo: 3 pts</span></li>
+          <li><span class="tag">Passivo</span>: Sempre negocia desconto e conhece rumores frescos
+            (Vantagem em barganhas).</li>
+          <li><span class="tag">Façanha (1×/sessão)</span>: Troque um item por equivalente sem custo extra OU
+            produza um item comum de sua bolsa conforme necessidade.</li>
+        </ul>
+
+        <h2>Navegador 🧭</h2>
+        <ul>
+          <li><span class="tag">Custo: 4 pts</span></li>
+          <li><span class="tag">Passivo</span>: Vantagem em navegação terrestre e marítima.</li>
+          <li><span class="tag">Façanha (1×/sessão)</span>: Encurte uma jornada ou evite um encontro hostil.</li>
+        </ul>
+
+        <h2>Nobre 👑</h2>
+        <ul>
+          <li><span class="tag">Custo: 7 pts</span></li>
+          <li><span class="tag">Passivo</span>: Recebe título nobre, terras e vassalos ligados ao nome da família.
+          </li>
+          <li><span class="tag">Façanha (1×/sessão)</span>: Convocar um favor político ou obter acesso restrito.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+    <h1>🔮 <strong>Magias</strong></h1>
+
+
+    <div class="section">
+      <div>
+        <h2><strong>Regras de Magia</strong></h2>
+        <p>Cada <strong>Caminho Elemental</strong> deve ser adquirido separadamente. Para usar magias, é necessário
+          comprar cada nível. Por exemplo, magias de <strong>Fogo Nível 1</strong> custam <strong>3 pontos</strong>,
+          enquanto magias de <strong>Fogo Nível 2</strong> custam <strong>6 pontos adicionais</strong>. Qualquer
+          personagem pode adquirir
+          magias de Nível 1, mas para desbloquear os <strong>Níveis 2</strong> e <strong>3</strong>, é necessário
+          pertencer a uma classe específica.</p>
+
+        <h2><strong>✨ Magias</strong></h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Custo</strong></th>
+              <th><strong>Magia</strong></th>
+              <th><strong>Nível</strong></th>
+              <th><strong>Efeito</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>0</strong></td>
+              <td><strong>Concentração</strong></td>
+              <td><strong>0</strong></td>
+              <td>Gaste <strong>1PM</strong> para ganhar <strong>+1</strong> no próximo teste.</td>
+            </tr>
+            <tr>
+              <td><strong>3 pts</strong></td>
+              <td><strong>Magias Nível 1</strong></td>
+              <td><strong>1</strong></td>
+              <td>Adquira magias nível 1 de 1 caminho, criando, por exemplo, um <em>monge do fogo</em> ou <em>arqueiro
+                  das sombras</em>.</td>
+            </tr>
+            <tr>
+              <td><strong>6 pts</strong></td>
+              <td><strong>Magias Nível 2</strong></td>
+              <td><strong>2</strong></td>
+              <td>Para nível 2, é necessário ser <strong>Mago</strong>, <strong>Templário</strong> ou
+                <strong>Vampiro</strong>.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>10 pts</strong></td>
+              <td><strong>Magias Nível 3</strong></td>
+              <td><strong>3</strong></td>
+              <td>Magias de nível 3 são exclusivas de <strong>Magos</strong>.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2><strong>💧 Água</strong></h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Categoria</strong></th>
+              <th><strong>Descrição</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Descrição Geral</strong></td>
+              <td><small>O arquétipo da Água</small> usa fluidez para <em>curar</em>, <em>fortalecer aliados</em> e
+                <em>moldar o campo</em> com jatos e correntes.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Nível 1</strong></td>
+              <td>Toque de água restaura <strong>1 ponto</strong> de vida ou concede <strong>+1</strong> em resistência
+                contra efeitos.</td>
+            </tr>
+            <tr>
+              <td><strong>Nível 2</strong></td>
+              <td>Jato rápido causa <strong>1d6</strong> de dano ou cura <strong>1d6</strong> pontos de vida; remove
+                venenos leves.</td>
+            </tr>
+            <tr>
+              <td><strong>Nível 3</strong></td>
+              <td>Onda cura <strong>2d6</strong> pontos de vida em área ou causa <strong>2d6</strong> de dano e empurra
+                inimigos.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div>
+        <h2><strong>🌑 Terra</strong></h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Categoria</strong></th>
+              <th><strong>Descrição</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Descrição Geral</strong></td>
+              <td><small>O arquétipo da Terra</small> molda o solo para criar barreiras e fortalecer armaduras naturais.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Nível 1</strong></td>
+              <td>Placas de terra conferem <strong>+1</strong> de armadura, criam <strong>1 m²</strong> de terreno
+                difícil ou deformidades na pedra.</td>
+            </tr>
+            <tr>
+              <td><strong>Nível 2</strong></td>
+              <td>Escudo de pedra concede <strong>1d6</strong> de armadura, causa <strong>1d6</strong> de dano
+                contundente ou abre e fecha passagens em túneis de pedra.</td>
+            </tr>
+            <tr>
+              <td><strong>Nível 3</strong></td>
+              <td>Couraça de rocha confere <strong>2d6</strong> de armadura ou ergue muralha sólida de <strong>3
+                  m</strong>.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2><strong>🌟 Combinações (nível 2)</strong></h2>
+        <table>
+          <caption><small>Combine magias de nível 2 para criar efeitos únicos:</small></caption>
+          <thead>
+            <tr>
+              <th><strong>Combinação</strong></th>
+              <th><strong>Efeito</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Fogo + Terra</strong></td>
+              <td><strong>Magma</strong>: rocha fundida causa dano contínuo e aprisiona inimigos.</td>
+            </tr>
+            <tr>
+              <td><strong>Ar + Terra</strong></td>
+              <td><strong>Tempestade de Areia</strong>: nuvem cortante desgasta armaduras e reduz ataques.</td>
+            </tr>
+            <tr>
+              <td><strong>Terra + Água</strong></td>
+              <td><strong>Florada Selvagem</strong>: raízes bloqueiam caminhos e prendem inimigos.</td>
+            </tr>
+            <tr>
+              <td><strong>Água + Ar</strong></td>
+              <td><strong>Névoa Ilusória</strong>: neblina confunde percepção e reduz visão.</td>
+            </tr>
+            <tr>
+              <td><strong>Água + Luz</strong></td>
+              <td><strong>Aura Purificadora</strong>: gotas luminosas curam ferimentos e removem debuffs.</td>
+            </tr>
+            <tr>
+              <td><strong>Luz + Trevas</strong></td>
+              <td><strong>Eclipse Arcano</strong>: anula magias inimigas e amplifica feitiços aliados.</td>
+            </tr>
+            <tr>
+              <td><strong>Fogo + Ar</strong></td>
+              <td><strong>Explosão Flamejante</strong>: rajada de fogo espalha chamas em área ampla.</td>
+            </tr>
+            <tr>
+              <td><strong>Água + Terra + Ar</strong></td>
+              <td><strong>Trovão</strong>: raios causam mais dano em metal ou água.</td>
+            </tr>
+            <tr>
+              <td><strong>Fogo + Água + Luz</strong></td>
+              <td><strong>Chama Sagrada</strong>: fogo purificador que causa dano em inimigos e cura aliados próximos.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div>
+        <h2>🔥 Fogo</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Descrição Geral</strong></td>
+              <td><small>O arquétipo do Fogo</small> representa <strong>destruição</strong> e
+                <strong>intensidade</strong>, controlando chamas para <em>incinerar inimigos</em>, criar explosões e
+                incutir medo com calor abrasador.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Nível 1</strong></td>
+              <td>Conjura uma pequena labareda que causa <strong>2 ponto</strong> de dano de fogo; pode acender objetos
+                inflamáveis <em>inofensivamente</em>.</td>
+            </tr>
+            <tr>
+              <td><strong>Nível 2</strong></td>
+              <td>Dispara um jato flamejante que causa <strong>2d6</strong> de dano de fogo e pode inflamar tecidos,
+                causando <small><em>queimadura (condição leve)</em></small>.</td>
+            </tr>
+            <tr>
+              <td><strong>Nível 3</strong></td>
+              <td>Lança uma clássica <strong>Bola de Fogo</strong> que causa <strong>3d6</strong> de dano de fogo em um
+                raio de <strong>3 m</strong>, incendiando a área e provocando <em>pânico</em>.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 style="margin-top: 53px;">🌪️ Vento</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Descrição Geral</strong></td>
+              <td><small>O arquétipo do Vento</small> valoriza <strong>mobilidade</strong> e <strong>agilidade</strong>,
+                moldando correntes de ar para flutuar, acelerar aliados e desferir cortes cortantes.</td>
+            </tr>
+            <tr>
+              <td><strong>Nível 1</strong></td>
+              <td>Invoca uma brisa sutil que concede <strong>+1</strong> em testes de movimento ou permite flutuar por
+                breves instantes (até <strong>3 m</strong>).</td>
+            </tr>
+            <tr>
+              <td><strong>Nível 2</strong></td>
+              <td>Conjura uma rajada cortante que causa <strong>1d6</strong> de dano de perfuração ou cria um impulso de
+                ar que concede <strong>1d6 m</strong> de movimento extra e leve levitação.</td>
+            </tr>
+            <tr>
+              <td><strong>Nível 3</strong></td>
+              <td>Gera um vórtice furioso que causa <strong>2d6</strong> de dano de vento cortante em área, levanta
+                inimigos e mantém aliados flutuando, controlando o campo de batalha.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div>
+        <h2>✨ Luz</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Descrição Geral</strong></td>
+              <td><small>O arquétipo da Luz</small> simboliza <strong>pureza</strong> e <strong>bênção</strong>,
+                canalizando energia radiante para curar ferimentos, proteger aliados e dissipar trevas.</td>
+            </tr>
+            <tr>
+              <td><strong>Nível 1</strong></td>
+              <td>Emite um brilho reconfortante que restaura <strong>1 ponto</strong> de vida ou concede
+                <strong>+1</strong> em testes de resistência contra efeitos de medo e cegueira.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Nível 2</strong></td>
+              <td>Libera uma onda suave de luz que cura <strong>1d6</strong> pontos de vida em um alvo ou gera um escudo
+                luminoso de <strong>1d6</strong> pontos que absorve dano e remove um efeito negativo leve.</td>
+            </tr>
+            <tr>
+              <td><strong>Nível 3</strong></td>
+              <td>Invoca uma Barreira Divina: cura <strong>2d6</strong> pontos de vida em área e cria uma aura de
+                <strong>3 m</strong> que concede <strong>+2</strong> em armadura e vantagem em testes de resistência
+                contra maldições por 1 turno.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>⚫ Trevas</h2>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Categoria</th>
+                <th>Descrição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Descrição Geral</strong></td>
+                <td><small>O arquétipo das Sombras</small> manipula forças <strong>nefastas</strong>, lançando maldições
+                  e doenças para drenar vitalidade, enfraquecer adversários e invocar servos espectrais.</td>
+              </tr>
+              <tr>
+                <td><strong>Nível 1</strong></td>
+                <td>Profere maldição menor que inflige <strong>1 ponto</strong> de dano necrótico por turno e impõe
+                  desvantagem em testes de resistência.</td>
+              </tr>
+              <tr>
+                <td><strong>Nível 2</strong></td>
+                <td>Desencadeia praga sombria que causa <strong>1d6</strong> de dano necrótico e invoca <strong>1d6
+                    esqueletos</strong> para atacar, drenando vigor dos inimigos.</td>
+              </tr>
+              <tr>
+                <td><strong>Nível 3</strong></td>
+                <td>Convoca maldição suprema que causa <strong>2d6</strong> de dano necrótico em área, drena recursos e
+                  invoca <strong>2d6 esqueletos espectrais</strong> aprimorados.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <h1>👹 <strong>Inimigos</strong></h1>
+
+    <div class="section">
+      <div>
+        <h2><strong>Criaturas Comuns (ND 2–9)</strong></h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Nível</strong></th>
+              <th><strong>Nome</strong></th>
+              <th><strong>PV</strong></th>
+              <th><strong>Dano / Armadura</strong></th>
+              <th><strong>Descrição</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>2</strong></td>
+              <td><strong>Rato</strong></td>
+              <td><strong>6</strong></td>
+              <td><strong>2 / 0</strong></td>
+              <td><small>Roedor feroz; vantagem em Furtividade; testes +1.</small></td>
+            </tr>
+            <tr>
+              <td><strong>3</strong></td>
+              <td><strong>Goblin</strong></td>
+              <td><strong>10</strong></td>
+              <td><strong>1d6 / 1</strong></td>
+              <td><small>Humanoide astuto; vantagem em Furtividade; testes +1.</small></td>
+            </tr>
+            <tr>
+              <td><strong>3</strong></td>
+              <td><strong>Gambá Venenoso</strong></td>
+              <td><strong>12</strong></td>
+              <td><strong>3 / 1</strong></td>
+              <td><small>Spray tóxico; fraqueza ao fogo; vantagem em Constituição; testes +1.</small></td>
+            </tr>
+            <tr>
+              <td><strong>4</strong></td>
+              <td><strong>Lobo</strong></td>
+              <td><strong>16</strong></td>
+              <td><strong>1d6 / 1</strong></td>
+              <td><small>Predador ágil; vantagem em Percepção; testes +2.</small></td>
+            </tr>
+            <tr>
+              <td><strong>5</strong></td>
+              <td><strong>Urso Pardo</strong></td>
+              <td><strong>22</strong></td>
+              <td><strong>2d6 / 2</strong></td>
+              <td><small>Força bruta; ataque de agarrão; vantagem em Força; testes +2.</small></td>
+            </tr>
+            <tr>
+              <td><strong>5</strong></td>
+              <td><strong>Batedor Silvestre</strong></td>
+              <td><strong>20</strong></td>
+              <td><strong>1d6+1 / 2</strong></td>
+              <td><small>Caçador furtivo; ataque surpresa; vantagem em Furtividade; testes +2.</small></td>
+            </tr>
+            <tr>
+              <td><strong>6</strong></td>
+              <td><strong>Bandido</strong></td>
+              <td><strong>24</strong></td>
+              <td><strong>1d6+1 / 2</strong></td>
+              <td><small>Assaltante treinado; corte preciso; vantagem em Intimidação; testes +3.</small></td>
+            </tr>
+            <tr>
+              <td><strong>7</strong></td>
+              <td><strong>Pantera</strong></td>
+              <td><strong>28</strong></td>
+              <td><strong>2d6 / 2</strong></td>
+              <td><small>Caçadora ágil; ataque furtivo; vantagem em Acrobacia; testes +3.</small></td>
+            </tr>
+            <tr>
+              <td><strong>7</strong></td>
+              <td><strong>Mercenário</strong></td>
+              <td><strong>30</strong></td>
+              <td><strong>1d6+2 / 2</strong></td>
+              <td><small>Combatente versátil; ataque mortal; vantagem em Intimidação; testes +3.</small></td>
+            </tr>
+            <tr>
+              <td><strong>8</strong></td>
+              <td><strong>Ogro</strong></td>
+              <td><strong>36</strong></td>
+              <td><strong>2d6+2 / 3</strong></td>
+              <td><small>Bruto imponente; golpe esmagador; vantagem em Constituição; testes +4.</small></td>
+            </tr>
+            <tr>
+              <td><strong>8</strong></td>
+              <td><strong>Elemental de Fogo</strong></td>
+              <td><strong>38</strong></td>
+              <td><strong>2d6+3 / 3</strong></td>
+              <td><small>Ser flamejante; ataque incendiário; vulnerável a Água; vantagem em Ataques de Fogo; testes
+                  +4.</small></td>
+            </tr>
+            <tr>
+              <td><strong>9</strong></td>
+              <td><strong>Gigante da Montanha</strong></td>
+              <td><strong>42</strong></td>
+              <td><strong>3d6 / 4</strong></td>
+              <td><small>Colosso poderoso; golpe devastador; vantagem em Força; testes +5.</small></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div>
+        <h2><strong>Outros Terrenos (ND 2–10)</strong></h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Nível</strong></th>
+              <th><strong>Nome</strong></th>
+              <th><strong>PV</strong></th>
+              <th><strong>Dano / Armadura</strong></th>
+              <th><strong>Descrição</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>2</strong></td>
+              <td><strong>Sapo Gigante Pantanoso</strong></td>
+              <td><strong>8</strong></td>
+              <td><strong>2 / 0</strong></td>
+              <td><small>Anfíbio tóxico com croak venenoso; resistente a Veneno; vantagem em Furtividade; testes
+                  +1.</small></td>
+            </tr>
+            <tr>
+              <td><strong>3</strong></td>
+              <td><strong>Garça Azul</strong></td>
+              <td><strong>12</strong></td>
+              <td><strong>1d6 / 1</strong></td>
+              <td><small>Ave predadora; mergulho (+1d6); vulnerável a Fogo; vantagem em Percepção; testes +1.</small>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>4</strong></td>
+              <td><strong>Cavalo-Marinho Imenso</strong></td>
+              <td><strong>18</strong></td>
+              <td><strong>1d6+1 / 2</strong></td>
+              <td><small>Investida aquática; empurra alvos; resistente a Frio; vantagem em Natação; testes +2.</small>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>5</strong></td>
+              <td><strong>Crocodilo Ancião</strong></td>
+              <td><strong>26</strong></td>
+              <td><strong>2d6 / 2</strong></td>
+              <td><small>Predador voraz; agarrão imobilizante; vulnerável a Gelo; vantagem em Força; testes +2.</small>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>6</strong></td>
+              <td><strong>Dragão-Marinho Jovem</strong></td>
+              <td><strong>32</strong></td>
+              <td><strong>2d6+1 / 3</strong></td>
+              <td><small>Réptil marinho; sopro gelado (1d6); resistente a Água; vantagem em Natação; testes +3.</small>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>7</strong></td>
+              <td><strong>Águia da Rochedo</strong></td>
+              <td><strong>34</strong></td>
+              <td><strong>2d6+1 / 1</strong></td>
+              <td><small>Caçadora aérea; mergulho (+1d6); vulnerável a Terra; vantagem em Acrobacia; testes +3.</small>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>8</strong></td>
+              <td><strong>Quimera Marinha</strong></td>
+              <td><strong>40</strong></td>
+              <td><strong>2d6+2 / 3</strong></td>
+              <td><small>Quimera anfíbia; ataques múltiplos; vulnerável à Luz; vantagem em Constituição; testes
+                  +4.</small></td>
+            </tr>
+            <tr>
+              <td><strong>9</strong></td>
+              <td><strong>Serpente Abissal</strong></td>
+              <td><strong>44</strong></td>
+              <td><strong>3d6 / 4</strong></td>
+              <td><small>Predador das profundezas; ataque esmagador; resistente a Água; vantagem em Furtividade; testes
+                  +5.</small></td>
+            </tr>
+            <tr>
+              <td><strong>10</strong></td>
+              <td><strong>Kraken Jovem</strong></td>
+              <td><strong>50</strong></td>
+              <td><strong>3d6+2 / 4</strong></td>
+              <td><small>Monstro colossal; tentáculos esmagadores; vulnerável a Eletricidade; vantagem em Força; testes
+                  +6.</small></td>
+            </tr>
+            <tr>
+              <td><strong>10</strong></td>
+              <td><strong>Leviatã</strong></td>
+              <td><strong>60</strong></td>
+              <td><strong>4d6 / 5</strong></td>
+              <td><small>Guardião dos mares; ataque devastador; resistente a Água; vantagem em Constituição; testes
+                  +7.</small></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="section">
+
+      <div>
+        <h2>Espectrais (ND 5–12)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Nível</strong></th>
+              <th><strong>Nome</strong></th>
+              <th><strong>PV</strong></th>
+              <th><strong>Dano / Armadura</strong></th>
+              <th><strong>Descrição</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>5</strong></td>
+              <td><strong>Esqueleto Errante</strong></td>
+              <td><strong>20</strong></td>
+              <td><strong>1d6+1 / 1</strong></td>
+              <td><small>Esqueleto ambulante; precisa de arma de prata; ataque ósseo leve; vantagem em Constituição;
+                  testes +1.</small></td>
+            </tr>
+            <tr>
+              <td><strong>5</strong></td>
+              <td><strong>Cadáver Corrompido</strong></td>
+              <td><strong>22</strong></td>
+              <td><strong>1d6+1 / 1</strong></td>
+              <td><small>Corpo putrefato; precisa de arma de prata; aura tóxica (1 dano/turno); vantagem em
+                  Constituição; testes +1.</small></td>
+            </tr>
+            <tr>
+              <td><strong>6</strong></td>
+              <td><strong>Zumbi Putrefato</strong></td>
+              <td><strong>28</strong></td>
+              <td><strong>1d6+1 / 2</strong></td>
+              <td><small>Zumbi decaído; precisa de arma de prata; investida podre; vantagem em Força; testes +2.</small>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>6</strong></td>
+              <td><strong>Ghoul Voraz</strong></td>
+              <td><strong>32</strong></td>
+              <td><strong>2d6 / 1</strong></td>
+              <td><small>Ghoul faminto; precisa de arma de prata; mordida paralisante; vantagem em Força; testes
+                  +2.</small></td>
+            </tr>
+            <tr>
+              <td><strong>7</strong></td>
+              <td><strong>Espectro Silencioso</strong></td>
+              <td><strong>36</strong></td>
+              <td><strong>2d6+1 / 1</strong></td>
+              <td><small>Entidade incorpórea; precisa de arma mágica; toque etéreo; vantagem em Furtividade; testes
+                  +3.</small></td>
+            </tr>
+            <tr>
+              <td><strong>8</strong></td>
+              <td><strong>Servo Celestial</strong></td>
+              <td><strong>40</strong></td>
+              <td><strong>2d6+1 / 2</strong></td>
+              <td><small>Guardião angelical; precisa de arma mágica; lança radiante; vantagem em Intimidação; testes
+                  +3.</small></td>
+            </tr>
+            <tr>
+              <td><strong>9</strong></td>
+              <td><strong>Banshee Uivante</strong></td>
+              <td><strong>48</strong></td>
+              <td><strong>2d6+2 / 2</strong></td>
+              <td><small>Voz fantasmagórica; precisa de arma mágica; uivo aterrador; vantagem em Intimidação; testes
+                  +4.</small></td>
+            </tr>
+            <tr>
+              <td><strong>10</strong></td>
+              <td><strong>Lich Sombrio</strong></td>
+              <td><strong>60</strong></td>
+              <td><strong>2d6+3 / 3</strong></td>
+              <td><small>Lorde necromântico; precisa de Luz; rajada necrótica (2d6); vantagem em Arcana; testes
+                  +4.</small></td>
+            </tr>
+            <tr>
+              <td><strong>11</strong></td>
+              <td><strong>Demônio Infernal</strong></td>
+              <td><strong>70</strong></td>
+              <td><strong>3d6 / 3</strong></td>
+              <td><small>Ser infernal; precisa de Luz; explosão de fogo negro; vantagem em Intimidação; testes
+                  +4.</small></td>
+            </tr>
+            <tr>
+              <td><strong>12</strong></td>
+              <td><strong>Lorde Vampírico</strong></td>
+              <td><strong>80</strong></td>
+              <td><strong>3d6 / 4</strong></td>
+              <td><small>Soberano sombrio; precisa de Luz; mordida drenante; vantagem em Carisma; testes +4.</small>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="section">
+
+      <div>
+        <h2>Feras e Monstros Mitológicos (ND 8–12)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Nível</strong></th>
+              <th><strong>Nome</strong></th>
+              <th><strong>PV</strong></th>
+              <th><strong>Dano / Armadura</strong></th>
+              <th><strong>Descrição</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>8</strong></td>
+              <td><strong>Minotauro</strong></td>
+              <td><strong>60</strong></td>
+              <td><strong>2d6+2 / 3</strong></td>
+              <td><small>Meio touro; investida de chifre; vulnerável à luz; vantagem em Força; testes +4.</small></td>
+            </tr>
+            <tr>
+              <td><strong>8</strong></td>
+              <td><strong>Manticora</strong></td>
+              <td><strong>64</strong></td>
+              <td><strong>2d6+2 / 4</strong></td>
+              <td><small>Felino alado; ataque de espinhos; resistente a perfuração; vantagem em Acrobacia; testes
+                  +4.</small></td>
+            </tr>
+            <tr>
+              <td><strong>9</strong></td>
+              <td><strong>Basilisco</strong></td>
+              <td><strong>68</strong></td>
+              <td><strong>2d6+3 / 3</strong></td>
+              <td><small>Olhar petrificante; imune a veneno; vulnerável a praga; vantagem em Resistência; testes
+                  +4.</small></td>
+            </tr>
+            <tr>
+              <td><strong>9</strong></td>
+              <td><strong>Roc</strong></td>
+              <td><strong>72</strong></td>
+              <td><strong>3d6 / 3</strong></td>
+              <td><small>Ave gigantesca; mergulho esmagador; vulnerável a vento; vantagem em Percepção; testes
+                  +4.</small></td>
+            </tr>
+            <tr>
+              <td><strong>10</strong></td>
+              <td><strong>Hidra</strong></td>
+              <td><strong>80</strong></td>
+              <td><strong>3d6 / 4</strong></td>
+              <td><small>Ser de múltiplas cabeças; mordida múltipla; regenera cabeças; vulnerável a fogo; vantagem em
+                  Constituição; testes +5.</small></td>
+            </tr>
+            <tr>
+              <td><strong>10</strong></td>
+              <td><strong>Fênix</strong></td>
+              <td><strong>82</strong></td>
+              <td><strong>3d6 / 4</strong></td>
+              <td><small>Ave flamejante; renasce das cinzas; esplendor solar; imune a fogo; vantagem em Carisma; testes
+                  +5.</small></td>
+            </tr>
+            <tr>
+              <td><strong>11</strong></td>
+              <td><strong>Quimera</strong></td>
+              <td><strong>90</strong></td>
+              <td><strong>3d6+1 / 4</strong></td>
+              <td><small>Três cabeças; sopro flamejante; resistente a veneno; vulnerável a gelo; vantagem em
+                  Constituição; testes +5.</small></td>
+            </tr>
+            <tr>
+              <td><strong>11</strong></td>
+              <td><strong>Grifo Real</strong></td>
+              <td><strong>94</strong></td>
+              <td><strong>3d6+1 / 3</strong></td>
+              <td><small>Leão alado; ataque aéreo forte; resistente a perfuração; vantagem em Acrobacia; testes
+                  +5.</small></td>
+            </tr>
+            <tr>
+              <td><strong>12</strong></td>
+              <td><strong>Dragão Ancião</strong></td>
+              <td><strong>120</strong></td>
+              <td><strong>4d6 / 5</strong></td>
+              <td><small>Dragão ancião; sopro dracônico; resistente a elementos; vulnerável a raio; vantagem em
+                  Intimidação; testes +5.</small></td>
+            </tr>
+            <tr>
+              <td><strong>12</strong></td>
+              <td><strong>Leviatã</strong></td>
+              <td><strong>130</strong></td>
+              <td><strong>4d6 / 4</strong></td>
+              <td><small>Ser marinho colossal; esmagar em área; resistente a frio; vulnerável a raio; vantagem em
+                  Natação; testes +5.</small></td>
+            </tr>
+            <tr>
+              <td><strong>12</strong></td>
+              <td><strong>Cerberus</strong></td>
+              <td><strong>140</strong></td>
+              <td><strong>4d6+1 / 5</strong></td>
+              <td><small>Guardião do submundo; mordida tripla; imune a fogo; vantagem em Intimidação; testes +6.</small>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+
+</body>
+
+</html>
