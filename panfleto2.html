@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="mode-default layout-2">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Panfleto 2 - Criação de Personagens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="page">
+        <h1>🛠️ Criação de Personagens</h1>
+
+        <div>
+            <h2>1 - Distribua seus Atributos</h2>
+            <p>Você tem <strong>25</strong> <span class="tag">Pontos de Personagem</span> para comprar pontos em <span
+                    class="tag">Atributos</span>.
+                O custo para aumentar cada ponto de <span class="tag">Atributo</span> é progressivo:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Valor de Atributo</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8+</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Custo em Pontos</th>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>8</td>
+                        <td>13</td>
+                        <td>20</td>
+                        <td>25</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Descrição dos Atributos</h3>
+            <ul>
+                <li><span class="tag">Força 💪</span> - Poder físico, carga e dano corpo a corpo.</li>
+                <li><span class="tag">Habilidade 🏃‍♂️</span> - Coordenação manual, velocidade e furtividade.</li>
+                <li><span class="tag">Mira 🎯</span> - Precisão em ataques à distância.</li>
+                <li><span class="tag">Resistência 🛡️</span> - Robustez; PV e resistência a venenos.</li>
+                <li><span class="tag">Inteligência 🧠</span> - Raciocínio, conhecimento e PM.</li>
+                <li><span class="tag">Carisma 👥</span> - Persuasão social e barganhas.</li>
+            </ul>
+
+            <h3>Exemplos de Arquétipos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Arquétipo</th>
+                        <th>FOR 💪</th>
+                        <th>HAB 🏃‍♂️</th>
+                        <th>MIR 🎯</th>
+                        <th>RES 🛡️</th>
+                        <th>INT 🧠</th>
+                        <th>CAR 👥</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Guerreiro</strong></td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Arqueira</strong></td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mago</strong></td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bardo</strong></td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div>
+            <h2>2 - Tipos de Equipamentos</h2>
+            <h2>Armas ⚔️</h2>
+            <ul>
+                <li><strong>Leve:</strong> sem requisitos e sem bônus.</li>
+                <li><strong>Pesada:</strong> requer 2 de <span class="tag">Força 💪</span>; +1 de dano.</li>
+                <li><strong>Complexa:</strong> requer 3 de <span class="tag">Habilidade 🏃‍♂️ </span>; +1 em testes
+                    ou
+                    dano.
+                </li>
+                <li><strong>Rara:</strong> requer 4 de <span class="tag">Força 💪 </span>; +2 em testes ou +1d6 de
+                    dano.
+                </li>
+            </ul>
+            <h2>Armaduras 🛡️</h2>
+            <ul>
+                <li><strong>Leve:</strong> sem requisitos e sem bônus.</li>
+                <li><strong>Couro:</strong> reduz 1 de <span class="tag">Movimentação</span>, reduz 1 de dano.</li>
+                <li><strong>Malha:</strong> requer 2 de <span class="tag">Força 💪</span>; reduz 2 de <span
+                        class="tag">Movimentação</span>, reduz 2 de dano.</li>
+                <li><strong>Pesada:</strong> requer 4 de <span class="tag">Força 💪</span>; reduz 4 de <span
+                        class="tag">Movimentação</span>, reduz 3 de dano.</li>
+            </ul>
+            <p><small><em>Nota:</em> <strong>Movimentação</strong> é uma regra opcional, pode significar casas/hex
+                    de um tabuleiro, metros ou então apenas efeitos narrativos.</small></p>
+            <h2>3 - Habilidades, Profissões & Evolução</h2>
+            <ul>
+                <li><strong>Evolução:</strong> Ao fim de cada aventura, receba <span class="tag">Pontos de
+                        Personagem</span> para investir em Atributos ou Habilidades.</li>
+                <li><strong>Habilidades:</strong> Compre habilidades dos Panfletos 4 em diante, com regras de
+                    <strong>classes,  magias e profissões</strong>.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            [1, 2, 3: Regras básicas]; [4, 5, 6: Classes e profissões]; [7, 8: Magias e habilidades]; [9, 10: Inimigos e
+            desafios]
+        </div>
+    </section>
+</body>
+
+</html>

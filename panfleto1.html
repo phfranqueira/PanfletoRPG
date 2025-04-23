@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" class="mode-default layout-2">
+<!-- 
+    mode-default (cores e marca d’água),
+    mode-minimal (preto & branco, alto contraste),
+    mode-custom (adicione suas fontes e imagens no CSS).
+
+    layout-2 ou layout-3 conforme o tipo de panfleto 
+    (duas colunas ou grid 3×3).
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Panfleto 1 - Regras Básicas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="page">
+    <h1>⚡ Regras‑Relâmpago</h1>
+
+    <!-- Coluna 1 -->
+    <div>
+      <h2>Testes Básicos</h2>
+      <p>Declare a Ação e o <span class="tag">Atributo</span>. Role <span class="tag">2d6 🎲</span> e siga essas regras:
+      </p>
+      <ul>
+        <li><strong>Duplo 6</strong> no dado: <span class="tag">12</span> é Sucesso crítico.</li>
+        <li><strong>Duplo 1</strong> no dado: <span class="tag">2</span> é Falha crítica.</li>
+        <li>Nos outros casos, some o Resultado ao <span class="tag">Atributo</span> declarado, e compare com a <span
+            class="tag">Dificuldade</span> do desafio.</li>
+        <li>Em testes de combate, o personagem com maior resultado vence; <strong>empate favorece o defensor</strong>.
+        </li>
+      </ul>
+      <h2>Atributos iniciais</h2>
+      <p>
+        <span class="tag">Força 💪</span>
+        <span class="tag">Habilidade 🏃‍♂️</span>
+        <span class="tag">Mira 🎯</span>
+        <span class="tag">Resistência 🛡️</span>
+        <span class="tag">Inteligência 🧠</span>
+        <span class="tag">Carisma 👥</span>
+      </p>
+
+
+      <div style="display: flex; gap: 8mm;">
+        <div style="flex: 1;">
+          <h2>Atributos Secundários</h2>
+          <ul>
+            <li><span class="tag">PV 🩸</span> = <span class="tag">Resistência 🛡️</span> × 5</li>
+            <li><span class="tag">PM ✨</span> = <span class="tag">Inteligência 🧠</span> × 4</li>
+          </ul>
+        </div>
+        <div style="flex: 1;">
+          <h2>Vantagem/Desvantagem</h2>
+          <p>
+            Role <span class="tag">3d6 🎲</span> e descarte o menor ou o maior dado.
+          </p>
+        </div>
+      </div>
+
+      <h2>Exemplos de Testes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nível</th>
+            <th>Atributo</th>
+            <th>Exemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6</td>
+            <td>Resistência 🛡️</td>
+            <td>Resistir a veneno fraco</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Força 💪</td>
+            <td>Empurrar porta pesada</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Habilidade 🏃‍♂️</td>
+            <td>Abrir fechadura complexa</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Inteligência 🧠</td>
+            <td>Desarmar runa explosiva</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <!-- Coluna 2 -->
+    <div>
+      <h2>Dano por Diferença</h2>
+      <ul>
+        <li>
+          <p>
+            O atacante escolhe um <span class="tag">Atributo</span> ofensivo:
+            <span class="tag">Força 💪</span>
+            <span class="tag">Habilidade 🏃‍♂️</span>
+            <span class="tag">Mira 🎯</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            O defensor escolhe um defensivo:
+            <span class="tag">Força 💪</span>
+            <span class="tag">Habilidade 🏃‍♂️</span>
+            <span class="tag">Resistência 🛡️</span>
+          </p>
+        </li>
+        <li>
+          <p>
+            A diferença entre os Resultados define o <span class="tag">Dano</span>. Em combates corpo a corpo, um bom
+            resultado do defensor pode acabar causando dano ao atacante.
+          </p>
+        </li>
+      </ul>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Diferença</th>
+            <th>Efeito de Dano</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0–2</td>
+            <td>−1 <span class="tag">PV 🩸 ou efeito narrativo.</span></td>
+          </tr>
+          <tr>
+            <td>3–5</td>
+            <td>−2 <span class="tag">PV 🩸 ou empurrão/posicionamento.</span></td>
+          </tr>
+          <tr>
+            <td>6–9</td>
+            <td>− <span class="tag">1d6 🎲</span><span class="tag">PV 🩸</span> ou condição leve</td>
+          </tr>
+          <tr>
+            <td>10+ ou crítico</td>
+            <td>Golpe decisivo: dano máximo e condição séria!</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Escala de Condições</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dado</th>
+            <th>Condição</th>
+            <th>Exemplo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td>Incapacitado</td>
+            <td>Paralisia, não pode agir</td>
+          </tr>
+          <tr>
+            <td>3–4</td>
+            <td>Ferimento Grave</td>
+            <td>−2 <span class="tag">PV 🩸</span> por rodada e Desvantagem</td>
+          </tr>
+          <tr>
+            <td>5–6</td>
+            <td>Sangrando</td>
+            <td>−1 <span class="tag">PV 🩸</span> por rodada</td>
+          </tr>
+          <tr>
+            <td>7–9</td>
+            <td>Atordoado</td>
+            <td>-2 em todos os testes</td>
+          </tr>
+          <tr>
+            <td>10–11</td>
+            <td>Exausto</td>
+            <td>Desvantagem</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Arranhão</td>
+            <td>Sem penalidade</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><small><em>Nota:</em> Todas as condições persistem até serem curadas por uma habilidade ou item.</small></p>
+
+
+    </div>
+    <div class="footer">
+        [1, 2, 3: Regras básicas]; [4, 5, 6: Classes e profissões]; [7, 8: Magias e habilidades]; [9, 10: Inimigos e
+        desafios]
+    </div>
+
+  </section>
+</body>
+
+</html>

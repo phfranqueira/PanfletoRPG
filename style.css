@@ -1,0 +1,155 @@
+@page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  :root {
+    --bg: #f2e4c6;
+    --text: #111;
+    --accent: #7b2610;
+    --light: #f7eed6;
+    --font-primary: 'Cormorant SC', serif;
+    --font-secondary: 'IM Fell English SC', serif;
+    --cols: 2;
+  }
+
+  html.mode-default {
+    --bg: #f2e4c6;
+    --text: #111;
+    --accent: #7b2610;
+    --light: #f7eed6;
+    --font-primary: 'Cormorant SC', serif;
+    --font-secondary: 'IM Fell English SC', serif;
+  }
+
+  html.mode-minimal {
+    --bg: #ffffff;
+    --text: #000000;
+    --accent: #000000;
+    --light: #ffffff;
+    --font-primary: sans-serif;
+    --font-secondary: sans-serif;
+  }
+
+  html.mode-custom {
+    --bg: url('custom-bg.png');
+    --text: #222222;
+    --accent: #0055aa;
+    --light: #f0f0f0;
+    --font-primary: 'YourCustomFont', serif;
+    --font-secondary: 'YourCustomFont', serif;
+  }
+
+  html.layout-2 {
+    --cols: 2;
+  }
+
+  html.layout-3 {
+    --cols: 3;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-primary);
+    line-height: 1.4;
+  }
+
+  .page {
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    width: 297mm;
+    height: 210mm;
+    padding: 4mm;
+    box-sizing: border-box;
+    column-gap: 8mm;
+    position: relative;
+    background: var(--bg);
+  }
+
+  html.mode-default .page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 60%, var(--accent) 100%);
+    opacity: 0.1;
+    pointer-events: none;
+  }
+
+  h1 {
+    grid-column: span var(--cols);
+    font-family: var(--font-secondary);
+    font-size: 2rem;
+    color: var(--accent);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    margin: 4mm 0 2mm 0;
+  }
+
+  p,
+  ul {
+    margin: 0 0 4mm 0;
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+
+  ul {
+    padding-left: 1em;
+  }
+
+  .tag {
+    display: inline-block;
+    background: var(--light);
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-size: 0.85rem;
+    margin: 0 4px 0 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 4mm 0;
+    font-size: 0.85rem;
+  }
+
+  th,
+  td {
+    border: 1px solid var(--text);
+    padding: 4px 6px;
+    text-align: center;
+  }
+
+  th {
+    background: var(--light);
+  }
+
+  .probabilities {
+    display: flex;
+    gap: 4mm;
+  }
+
+  .probabilities .prob-table {
+    flex: 1;
+  }
+
+  .prob-table caption {
+    font-weight: bold;
+    margin-bottom: 2mm;
+  }
+
+  .footer {
+    grid-column: span var(--cols);
+    font-size: 0.7rem;
+    border-top: 1px solid var(--text);
+    padding-top: 4mm;
+    text-align: center;
+  }
