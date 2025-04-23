@@ -153,3 +153,14 @@
     padding-top: 4mm;
     text-align: center;
   }
+  
+
+
+  .div-pagina {
+    height: 148.5mm; /* Metade da altura de uma página A4 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    page-break-inside: avoid; /* Evita quebra de página no meio da div */
+  }
